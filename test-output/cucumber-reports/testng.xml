@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testng-results failed="0" passed="1" skipped="0" total="1">
+<suite duration-ms="9438" name="io.cucumber.core.plugin.TestNGFormatter">
+<test duration-ms="9438" name="io.cucumber.core.plugin.TestNGFormatter">
+<class name="Checkout items in the basket">
+<test-method duration-ms="9246" finished-at="2025-02-20T16:40:05.851Z" name="Check item total cost and tax" started-at="2025-02-20T16:39:56.578Z" status="PASS"/>
+</class>
+</test>
+</suite>
+</testng-results>

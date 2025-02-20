@@ -1,0 +1,498 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2025-02-20T16:39:56.578Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4570000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Check item total cost and tax",
+        "description": "",
+        "id": "checkout-items-in-the-basket;check-item-total-cost-and-tax",
+        "after": [
+          {
+            "result": {
+              "duration": 1252000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 551000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the home page",
+            "match": {
+              "location": "qumu.UIStepDefinition.i_am_on_the_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 63000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "User Name: standard_user"
+            ],
+            "result": {
+              "duration": 389000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login in with the following details",
+            "match": {
+              "location": "qumu.UIStepDefinition.i_login_with_the_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "standard_user",
+                  "secret_sauce"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 958000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I add the following items to the basket",
+            "match": {
+              "location": "qumu.UIStepDefinition.i_add_the_following_items_to_the_basket(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Fleece Jacket"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bolt T-Shirt"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Onesie"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see 4 items added to the shopping cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 13
+                }
+              ],
+              "location": "qumu.UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 250000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on the shopping cart",
+            "match": {
+              "location": "qumu.UIStepDefinition.i_click_on_the_shopping_cart()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I verify that the QTY count for each item should be 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 52
+                }
+              ],
+              "location": "qumu.UIStepDefinition.i_verify_that_the_qty_count_for_each_item_should_be(int)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I remove the following item:",
+            "match": {
+              "location": "qumu.UIStepDefinition.i_remove_the_following_item(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Fleece Jacket"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see 3 items added to the shopping cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 13
+                }
+              ],
+              "location": "qumu.UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the CHECKOUT button",
+            "match": {
+              "location": "qumu.UIStepDefinition.i_click_on_the_checkout_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I type \"FirstName\" for First Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FirstName\"",
+                  "offset": 7
+                }
+              ],
+              "location": "qumu.UIStepDefinition.i_type_for_first_name(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I type \"LastName\" for Last Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LastName\"",
+                  "offset": 7
+                }
+              ],
+              "location": "qumu.UIStepDefinition.i_type_for_last_name(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I type \"EC1A 9JU\" for ZIP/Postal Code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EC1A 9JU\"",
+                  "offset": 7
+                }
+              ],
+              "location": "qumu.UIStepDefinition.i_type_for_zip_postal_code(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 252000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on the CONTINUE button",
+            "match": {
+              "location": "qumu.UIStepDefinition.i_click_on_the_continue_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Item total will be equal to the total of items on the list",
+            "match": {
+              "location": "qumu.UIStepDefinition.item_total_will_be_equal_to_the_total_of_items_on_the_list()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "a Tax rate of 8 % is applied to the total",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 14
+                }
+              ],
+              "location": "qumu.UIStepDefinition.a_tax_rate_is_applied_to_the_total(double)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UI"
+          }
+        ]
+      }
+    ],
+    "name": "Checkout items in the basket",
+    "description": "",
+    "id": "checkout-items-in-the-basket",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/UI-Test.feature",
+    "tags": [
+      {
+        "name": "@UI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
