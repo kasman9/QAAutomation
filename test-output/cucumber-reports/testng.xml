@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><testng-results failed="0" passed="1" skipped="0" total="1">
-<suite duration-ms="9438" name="io.cucumber.core.plugin.TestNGFormatter">
-<test duration-ms="9438" name="io.cucumber.core.plugin.TestNGFormatter">
-<class name="Checkout items in the basket">
-<test-method duration-ms="9246" finished-at="2025-02-20T16:40:05.851Z" name="Check item total cost and tax" started-at="2025-02-20T16:39:56.578Z" status="PASS"/>
+<?xml version="1.0" encoding="UTF-8"?><testng-results failed="0" passed="8" skipped="0" total="8">
+<suite duration-ms="6932" name="io.cucumber.core.plugin.TestNGFormatter">
+<test duration-ms="6932" name="io.cucumber.core.plugin.TestNGFormatter">
+<class name="API test">
+<test-method duration-ms="1478" finished-at="2025-02-21T01:20:43.234Z" name="Should see LIST USERS of all existing users" started-at="2025-02-21T01:20:41.744Z" status="PASS"/>
+<test-method duration-ms="58" finished-at="2025-02-21T01:20:43.312Z" name="Should see SINGLE USER data" started-at="2025-02-21T01:20:43.252Z" status="PASS"/>
+<test-method duration-ms="354" finished-at="2025-02-21T01:20:43.673Z" name="Should see SINGLE USER NOT FOUND error code" started-at="2025-02-21T01:20:43.317Z" status="PASS"/>
+<test-method duration-ms="391" finished-at="2025-02-21T01:20:44.070Z" name="CREATE a user" started-at="2025-02-21T01:20:43.678Z" status="PASS"/>
+<test-method duration-ms="403" finished-at="2025-02-21T01:20:44.478Z" name="CREATE a user_2" started-at="2025-02-21T01:20:44.075Z" status="PASS"/>
+<test-method duration-ms="361" finished-at="2025-02-21T01:20:44.846Z" name="LOGIN - SUCCESSFUL by a user" started-at="2025-02-21T01:20:44.482Z" status="PASS"/>
+<test-method duration-ms="337" finished-at="2025-02-21T01:20:45.190Z" name="LOGIN - UNSUCCESSFUL by a user" started-at="2025-02-21T01:20:44.851Z" status="PASS"/>
+<test-method duration-ms="3335" finished-at="2025-02-21T01:20:48.530Z" name="Should see the list of users with DELAYED RESPONSE" started-at="2025-02-21T01:20:45.194Z" status="PASS"/>
 </class>
 </test>
 </suite>

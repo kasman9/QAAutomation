@@ -20,8 +20,6 @@ public class UIStepDefinition {
     @Before
     public void setUp(Scenario scenario) {
         this.scenario = scenario;
-
-        // ✅ Initialize pages
          ini = new IniClass();
 
     }

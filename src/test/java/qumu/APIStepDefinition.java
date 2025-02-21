@@ -19,6 +19,8 @@ public class APIStepDefinition {
     private int totalPages;
     private Scenario scenario;
 
+    private final String BASE_URL = LoadProp.getproperty("apiURL");
+
     @Before
     public void setUp(Scenario scenario) {
         this.scenario = scenario;
@@ -29,7 +31,7 @@ public class APIStepDefinition {
     public void i_get_the_default_list_of_users_for_on_1st_page() {
         response = given()
                 .when()
-                .get("https://reqres.in/api/users?page=1")
+                .get(BASE_URL + "/users?page=1")
                 .then()
                 .statusCode(200)
                 .extract()
@@ -46,7 +48,7 @@ public class APIStepDefinition {
         for (int i = 1; i <= totalPages; i++) {
             Response pageResponse = given()
                     .when()
-                    .get("https://reqres.in/api/users?page=" + i)
+                    .get(BASE_URL +"/users?page=" + i)
                     .then()
                     .statusCode(200)
                     .extract()
@@ -71,7 +73,7 @@ public class APIStepDefinition {
     public void i_make_a_search_for_user(int userId) {
         response = given()
                 .when()
-                .get("https://reqres.in/api/users/" + userId)
+                .get(BASE_URL +"/users/" + userId)
                 .then()
                 .extract()
                 .response();
@@ -99,7 +101,7 @@ public class APIStepDefinition {
                 .header("Content-Type", "application/json")
                 .body("{ \"name\": \"" + name + "\", \"job\": \"" + job + "\" }")
                 .when()
-                .post("https://reqres.in/api/users")
+                .post(BASE_URL +"/api/users")
                 .then()
                 .statusCode(201)
                 .extract()
@@ -137,7 +139,7 @@ public class APIStepDefinition {
                 .header("Content-Type", "application/json")
                 .body("{ \"email\": \"" + email + "\", \"password\": \"" + password + "\" }")
                 .when()
-                .post("https://reqres.in/api/login")
+                .post(BASE_URL +"/login")
                 .then()
                 .extract()
                 .response();
@@ -165,7 +167,7 @@ public class APIStepDefinition {
                 .header("Content-Type", "application/json")
                 .body(password == null ? "{ \"email\": \"" + email + "\" }" : "{ \"email\": \"" + email + "\", \"password\": \"" + password + "\" }")
                 .when()
-                .post("https://reqres.in/api/login")
+                .post(BASE_URL +"/login")
                 .then()
                 .extract()
                 .response();
@@ -186,7 +188,7 @@ public class APIStepDefinition {
     public void i_wait_for_the_user_list_to_load() {
         response = given()
                 .when()
-                .get("https://reqres.in/api/users?delay=3")
+                .get(BASE_URL +"/users?delay=3")
                 .then()
                 .statusCode(200)
                 .extract()

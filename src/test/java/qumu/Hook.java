@@ -42,10 +42,10 @@ public class Hook {
 
     @Before()
     public void initializeTest(Scenario scenario) {
-        clearOldScreenshots();
          tags = new ArrayList<>(scenario.getSourceTagNames());
-        // ✅ Start browser only for UI tests
+        // Start browser only for UI tests
         if (tags.contains("@UI")) {
+            clearOldScreenshots();
             driver = new BrowserSetup().selectBrowser();
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
@@ -56,17 +56,17 @@ public class Hook {
     }
 
 
-    // ✅ Capture Screenshot After Each Step
+
     @AfterStep
     public void takeScreenshotAfterStep(Scenario scenario) {
         if (tags.contains("@UI")) {
             String currentStep = scenario.getName();
 
-            // ✅ Prevent duplicate screenshots by checking if the step name is the same as the last step
+
             if (currentStep.equals(lastStepName)) {
                 return; // Skip taking duplicate screenshots
             }
-            lastStepName = currentStep;  // ✅ Update last executed step
+            lastStepName = currentStep;
 
             if (driver instanceof TakesScreenshot) {
                 File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

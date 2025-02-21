@@ -4,11 +4,13 @@ import org.kohsuke.rngom.parse.host.Base;
 import org.openqa.selenium.WebDriver;
 
 public class BasePage {
-    protected  WebDriver driver;  // ✅ WebDriver instance
+    protected  WebDriver driver;
 
     public BasePage()
     {
-        this.driver=DriverManager.getDriver();
+        if (DriverManager.getDriver() != null) {
+            this.driver = DriverManager.getDriver();
+        }
 
     }
 
