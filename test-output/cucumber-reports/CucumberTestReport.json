@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-02-21T01:20:41.744Z",
+        "start_timestamp": "2025-02-25T15:24:35.004Z",
         "before": [
           {
             "result": {
@@ -11,24 +11,16 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -36,16 +28,6 @@
         "name": "Should see LIST USERS of all existing users",
         "description": "",
         "id": "api-test;should-see-list-users-of-all-existing-users",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -55,24 +37,14 @@
               "Total Pages \u003d 2"
             ],
             "result": {
-              "duration": 1303000000,
+              "duration": 1206000000,
               "status": "passed"
             },
             "line": 5,
             "name": "I get the default list of users for on 1st page",
             "match": {
-              "location": "qumu.APIStepDefinition.i_get_the_default_list_of_users_for_on_1st_page()"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_get_the_default_list_of_users_for_on_1st_page()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
@@ -81,24 +53,14 @@
               "List of Users on page 2 \u003d 6"
             ],
             "result": {
-              "duration": 168000000,
+              "duration": 164000000,
               "status": "passed"
             },
             "line": 6,
             "name": "I get the list of all users within every page",
             "match": {
-              "location": "qumu.APIStepDefinition.i_get_the_list_of_all_users_within_every_page()"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_get_the_list_of_all_users_within_every_page()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "When "
           },
           {
@@ -107,25 +69,14 @@
               "Total User ID\u0027s \u003d 12"
             ],
             "result": {
-              "duration": 2000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 7,
             "name": "I should see total users count equals the number of user ids",
             "match": {
-              "location": "qumu.APIStepDefinition.i_should_see_total_users_count_equals_the_number_of_user_ids()"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_see_total_users_count_equals_the_number_of_user_ids()"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Then "
           }
         ],
@@ -136,23 +87,15 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-21T01:20:43.252Z",
+        "start_timestamp": "2025-02-25T15:24:36.409Z",
         "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
-            }
-          },
           {
             "result": {
               "duration": 1000000,
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
@@ -160,7 +103,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -168,22 +111,12 @@
         "name": "Should see SINGLE USER data",
         "description": "",
         "id": "api-test;should-see-single-user-data",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 46000000,
+              "duration": 59000000,
               "status": "passed"
             },
             "line": 10,
@@ -195,18 +128,8 @@
                   "offset": 25
                 }
               ],
-              "location": "qumu.APIStepDefinition.i_make_a_search_for_user(int)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_make_a_search_for_user(int)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
@@ -215,24 +138,14 @@
               "User data Email from response: emma.wong@reqres.in"
             ],
             "result": {
-              "duration": 11000000,
+              "duration": 10000000,
               "status": "passed"
             },
             "line": 11,
             "name": "I should see the following user data",
             "match": {
-              "location": "qumu.APIStepDefinition.i_should_see_the_following_user_data(io.cucumber.datatable.DataTable)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_see_the_following_user_data(io.cucumber.datatable.DataTable)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "rows": [
               {
                 "cells": [
@@ -257,15 +170,14 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-21T01:20:43.317Z",
+        "start_timestamp": "2025-02-25T15:24:36.483Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
@@ -273,15 +185,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -289,22 +193,12 @@
         "name": "Should see SINGLE USER NOT FOUND error code",
         "description": "",
         "id": "api-test;should-see-single-user-not-found-error-code",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 353000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 16,
@@ -316,18 +210,8 @@
                   "offset": 25
                 }
               ],
-              "location": "qumu.APIStepDefinition.i_make_a_search_for_user(int)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_make_a_search_for_user(int)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
@@ -335,6 +219,7 @@
               "Error code \u003d 404"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 17,
@@ -346,18 +231,8 @@
                   "offset": 21
                 }
               ],
-              "location": "qumu.APIStepDefinition.i_receive_error_code_in_response(int)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_receive_error_code_in_response(int)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Then "
           }
         ],
@@ -368,14 +243,14 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-21T01:20:43.678Z",
+        "start_timestamp": "2025-02-25T15:24:36.532Z",
         "before": [
           {
             "result": {
               "status": "passed"
             },
             "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
@@ -383,15 +258,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -399,16 +266,6 @@
         "name": "CREATE a user",
         "description": "",
         "id": "api-test;create-a-user;;2",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
@@ -417,7 +274,7 @@
               "Created user with name: Peter and job: Manager"
             ],
             "result": {
-              "duration": 367000000,
+              "duration": 348000000,
               "status": "passed"
             },
             "line": 20,
@@ -433,45 +290,25 @@
                   "offset": 39
                 }
               ],
-              "location": "qumu.APIStepDefinition.i_create_a_user_with_following(java.lang.String,java.lang.String)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_create_a_user_with_following(java.lang.String,java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
             "output": [
               "Created user: Name\u003dPeter, Job\u003dManager",
-              "User ID: 194",
-              "Created At: 2025-02-21T01:20:44.747Z"
+              "User ID: 996",
+              "Created At: 2025-02-25T15:24:38.003Z"
             ],
             "result": {
-              "duration": 24000000,
+              "duration": 22000000,
               "status": "passed"
             },
             "line": 21,
             "name": "response should contain the following data",
             "match": {
-              "location": "qumu.APIStepDefinition.response_should_contain_the_following_data(io.cucumber.datatable.DataTable)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.response_should_contain_the_following_data(io.cucumber.datatable.DataTable)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "rows": [
               {
                 "cells": [
@@ -496,7 +333,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-21T01:20:44.075Z",
+        "start_timestamp": "2025-02-25T15:24:36.909Z",
         "before": [
           {
             "result": {
@@ -504,7 +341,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
@@ -512,15 +349,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -528,16 +357,6 @@
         "name": "CREATE a user",
         "description": "",
         "id": "api-test;create-a-user;;3",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
@@ -546,7 +365,7 @@
               "Created user with name: Liza and job: Sales"
             ],
             "result": {
-              "duration": 374000000,
+              "duration": 327000000,
               "status": "passed"
             },
             "line": 20,
@@ -562,45 +381,25 @@
                   "offset": 38
                 }
               ],
-              "location": "qumu.APIStepDefinition.i_create_a_user_with_following(java.lang.String,java.lang.String)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_create_a_user_with_following(java.lang.String,java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
             "output": [
               "Created user: Name\u003dLiza, Job\u003dSales",
-              "User ID: 583",
-              "Created At: 2025-02-21T01:20:45.152Z"
+              "User ID: 634",
+              "Created At: 2025-02-25T15:24:38.362Z"
             ],
             "result": {
-              "duration": 28000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "line": 21,
             "name": "response should contain the following data",
             "match": {
-              "location": "qumu.APIStepDefinition.response_should_contain_the_following_data(io.cucumber.datatable.DataTable)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.response_should_contain_the_following_data(io.cucumber.datatable.DataTable)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "rows": [
               {
                 "cells": [
@@ -625,14 +424,14 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-21T01:20:44.482Z",
+        "start_timestamp": "2025-02-25T15:24:37.269Z",
         "before": [
           {
             "result": {
               "status": "passed"
             },
             "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
@@ -640,15 +439,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -656,39 +447,19 @@
         "name": "LOGIN - SUCCESSFUL by a user",
         "description": "",
         "id": "api-test;login---successful-by-a-user",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 361000000,
+              "duration": 325000000,
               "status": "passed"
             },
             "line": 30,
             "name": "I login successfully with the following data",
             "match": {
-              "location": "qumu.APIStepDefinition.i_login_successfully_with_the_following_data(io.cucumber.datatable.DataTable)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_login_successfully_with_the_following_data(io.cucumber.datatable.DataTable)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "rows": [
               {
                 "cells": [
@@ -721,18 +492,8 @@
                   "offset": 32
                 }
               ],
-              "location": "qumu.APIStepDefinition.i_should_get_a_response_code_of(int)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_get_a_response_code_of(int)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Then "
           }
         ],
@@ -743,14 +504,14 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-21T01:20:44.851Z",
+        "start_timestamp": "2025-02-25T15:24:37.603Z",
         "before": [
           {
             "result": {
               "status": "passed"
             },
             "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
@@ -758,15 +519,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -774,39 +527,19 @@
         "name": "LOGIN - UNSUCCESSFUL by a user",
         "description": "",
         "id": "api-test;login---unsuccessful-by-a-user",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 329000000,
+              "duration": 375000000,
               "status": "passed"
             },
             "line": 36,
             "name": "I login unsuccessfully with the following data",
             "match": {
-              "location": "qumu.APIStepDefinition.i_login_unsuccessfully_with_the_following_data(io.cucumber.datatable.DataTable)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_login_unsuccessfully_with_the_following_data(io.cucumber.datatable.DataTable)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "rows": [
               {
                 "cells": [
@@ -840,18 +573,8 @@
                   "offset": 32
                 }
               ],
-              "location": "qumu.APIStepDefinition.i_should_get_a_response_code_of(int)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_get_a_response_code_of(int)"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Then "
           },
           {
@@ -859,25 +582,14 @@
               "Error Message: Missing password"
             ],
             "result": {
-              "duration": 6000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 40,
             "name": "I should see the following response message:",
             "match": {
-              "location": "qumu.APIStepDefinition.i_should_see_the_following_response_message(io.cucumber.datatable.DataTable)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_see_the_following_response_message(io.cucumber.datatable.DataTable)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "rows": [
               {
                 "cells": [
@@ -900,7 +612,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-21T01:20:45.194Z",
+        "start_timestamp": "2025-02-25T15:24:37.988Z",
         "before": [
           {
             "result": {
@@ -908,7 +620,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           },
           {
@@ -916,15 +628,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "qumu.Hook.initializeTest(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -932,39 +636,19 @@
         "name": "Should see the list of users with DELAYED RESPONSE",
         "description": "",
         "id": "api-test;should-see-the-list-of-users-with-delayed-response",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "qumu.Hook.screenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3325000000,
+              "duration": 3341000000,
               "status": "passed"
             },
             "line": 45,
             "name": "I wait for the user list to load",
             "match": {
-              "location": "qumu.APIStepDefinition.i_wait_for_the_user_list_to_load()"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_wait_for_the_user_list_to_load()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
@@ -973,24 +657,14 @@
               "Unique Set of User IDs: [1, 2, 3, 4, 5, 6]"
             ],
             "result": {
-              "duration": 9000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 46,
             "name": "I should see that every user has a unique id",
             "match": {
-              "location": "qumu.APIStepDefinition.i_should_see_that_every_user_has_a_unique_id()"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_see_that_every_user_has_a_unique_id()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.Hook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Then "
           }
         ],
@@ -1005,7 +679,7 @@
     "description": "",
     "id": "api-test",
     "keyword": "Feature",
-    "uri": "file:src/test/java/API-Test.feature",
+    "uri": "file:src/test/java/qumu/features/API-Test.feature",
     "tags": [
       {
         "name": "@API",

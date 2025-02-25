@@ -1,4 +1,4 @@
-package qumu;
+package qumu.hook;
 
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -9,6 +9,8 @@ import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import qumu.BrowserSetup;
+import qumu.LoadProp;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Hook {
+public class UIHook {
 
     private BrowserSetup browsersetup;
     private static final int WAIT_SEC = 20;
@@ -40,7 +42,7 @@ public class Hook {
         }
     }
 
-    @Before()
+    @Before(order = 1)
     public void initializeTest(Scenario scenario) {
          tags = new ArrayList<>(scenario.getSourceTagNames());
         // Start browser only for UI tests

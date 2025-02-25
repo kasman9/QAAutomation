@@ -1,11 +1,12 @@
-package qumu;
+package qumu.runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = {"src/test/java/API-Test.feature"},
-        glue = {"qumu"},
+        features = {"src/test/java/qumu/features/API-Test.feature"},
+        //glue = {"qumu.stepDefinitions", "qumu.hook"},
+        glue = {"qumu.stepDefinitions"/*,"qumu.hook"*/},
         plugin = {
                 "pretty",
                 "html:test-output/cucumber-reports/cucumber-pretty-api",
@@ -14,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
                 "testng:test-output/cucumber-reports/testng.xml"
         }
 )
-public class APIRunnerTest extends AbstractTestNGCucumberTests {
+public class APIRunner extends AbstractTestNGCucumberTests {
 
 
 }

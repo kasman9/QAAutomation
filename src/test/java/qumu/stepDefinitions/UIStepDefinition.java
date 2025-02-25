@@ -1,4 +1,4 @@
-package qumu;
+package qumu.stepDefinitions;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import qumu.IniClass;
 
 import java.util.List;
 
@@ -15,7 +16,6 @@ public class UIStepDefinition {
 
 
     private Scenario scenario;
-    private WebDriver driver;
     private IniClass ini;
     @Before
     public void setUp(Scenario scenario) {

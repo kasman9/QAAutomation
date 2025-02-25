@@ -1,4 +1,4 @@
-package qumu;
+package qumu.stepDefinitions;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -6,6 +6,7 @@ import org.testng.*;
 import io.restassured.response.*;
 import io.cucumber.java.Scenario;
 import io.cucumber.datatable.DataTable;
+import qumu.LoadProp;
 
 import java.util.HashSet;
 import java.util.List;

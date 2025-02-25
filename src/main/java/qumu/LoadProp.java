@@ -9,7 +9,7 @@ public class LoadProp  {
 
     static Properties prop;
     static FileInputStream input;
-    public static String testData = "/src/test/java/TestData/TestData.properties";
+    public static String testData = "/src/test/java/qumu/TestData/TestData.properties";
 
     private static File currentDirectory = new File(new File("").getAbsolutePath());
 
