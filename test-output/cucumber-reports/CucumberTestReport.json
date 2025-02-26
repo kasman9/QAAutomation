@@ -3,11 +3,14 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-02-26T03:12:17.279Z",
+        "start_timestamp": "2025-02-26T04:43:32.517Z",
         "before": [
           {
+            "output": [
+              "API test run begins"
+            ],
             "result": {
-              "duration": 999400,
+              "duration": 5000000,
               "status": "passed"
             },
             "match": {
@@ -16,7 +19,6 @@
           },
           {
             "result": {
-              "duration": 4811947100,
               "status": "passed"
             },
             "match": {
@@ -25,7 +27,161 @@
           },
           {
             "result": {
-              "duration": 1000100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Should see LIST USERS of all existing users",
+        "description": "",
+        "id": "api-test;should-see-list-users-of-all-existing-users",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.UIHook.screenshot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "API test run completed"
+            ],
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.APIHook.afterTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Total Users \u003d 12",
+              "Total Pages \u003d 2"
+            ],
+            "result": {
+              "duration": 1959000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I get the default list of users for on 1st page",
+            "match": {
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_get_the_default_list_of_users_for_on_1st_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "List of Users on page 1 \u003d 6",
+              "List of Users on page 2 \u003d 6"
+            ],
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get the list of all users within every page",
+            "match": {
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_get_the_list_of_all_users_within_every_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Total Users \u003d 12",
+              "Total User ID\u0027s \u003d 12"
+            ],
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see total users count equals the number of user ids",
+            "match": {
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_see_total_users_count_equals_the_number_of_user_ids()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-26T04:43:34.698Z",
+        "before": [
+          {
+            "output": [
+              "API test run begins"
+            ],
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.APIHook.beforeTest(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.UIHook.initializeTest(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
               "status": "passed"
             },
             "match": {
@@ -41,14 +197,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Check item total cost and tax",
+        "line": 9,
+        "name": "Should see SINGLE USER data",
         "description": "",
-        "id": "checkout-items-in-the-basket;check-item-total-cost-and-tax",
+        "id": "api-test;should-see-single-user-data",
         "after": [
           {
             "result": {
-              "duration": 994892000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -56,6 +212,154 @@
             }
           },
           {
+            "output": [
+              "API test run completed"
+            ],
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.APIHook.afterTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 87000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I make a search for user 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 25
+                }
+              ],
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_make_a_search_for_user(int)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 3000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Expected User data Email: emma.wong@reqres.in",
+              "User data Email from response: emma.wong@reqres.in"
+            ],
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the following user data",
+            "match": {
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_should_see_the_following_user_data(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "first_name",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "Emma",
+                  "emma.wong@reqres.in"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-26T04:43:34.828Z",
+        "before": [
+          {
+            "output": [
+              "API test run begins"
+            ],
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.APIHook.beforeTest(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.UIHook.initializeTest(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Should see SINGLE USER NOT FOUND error code",
+        "description": "",
+        "id": "api-test;should-see-single-user-not-found-error-code",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.UIHook.screenshot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "API test run completed"
+            ],
             "result": {
               "status": "passed"
             },
@@ -69,18 +373,23 @@
         "steps": [
           {
             "result": {
-              "duration": 925364400,
+              "duration": 345000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I am on the home page",
+            "line": 16,
+            "name": "I make a search for user 55",
             "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_am_on_the_home_page()"
+              "arguments": [
+                {
+                  "val": "55",
+                  "offset": 25
+                }
+              ],
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_make_a_search_for_user(int)"
             },
             "after": [
               {
                 "result": {
-                  "duration": 111926400,
                   "status": "passed"
                 },
                 "match": {
@@ -92,359 +401,21 @@
           },
           {
             "output": [
-              "User Name: standard_user"
+              "Error code \u003d 404"
             ],
             "result": {
-              "duration": 405712200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I login in with the following details",
-            "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_login_with_the_following_details(io.cucumber.datatable.DataTable)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "userName",
-                  "Password"
-                ]
-              },
-              {
-                "cells": [
-                  "standard_user",
-                  "secret_sauce"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 895564200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I add the following items to the basket",
-            "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_add_the_following_items_to_the_basket(io.cucumber.datatable.DataTable)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "Sauce Labs Backpack"
-                ]
-              },
-              {
-                "cells": [
-                  "Sauce Labs Fleece Jacket"
-                ]
-              },
-              {
-                "cells": [
-                  "Sauce Labs Bolt T-Shirt"
-                ]
-              },
-              {
-                "cells": [
-                  "Sauce Labs Onesie"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13999300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I should see 4 items added to the shopping cart",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 13
-                }
-              ],
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 224818900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I click on the shopping cart",
-            "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_click_on_the_shopping_cart()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35007500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I verify that the QTY count for each item should be 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 52
-                }
-              ],
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_verify_that_the_qty_count_for_each_item_should_be(int)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 215888500,
               "status": "passed"
             },
             "line": 17,
-            "name": "I remove the following item:",
-            "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_remove_the_following_item(io.cucumber.datatable.DataTable)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "Sauce Labs Fleece Jacket"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13001000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I should see 3 items added to the shopping cart",
+            "name": "I receive error code 404 in response",
             "match": {
               "arguments": [
                 {
-                  "val": "3",
-                  "offset": 13
+                  "val": "404",
+                  "offset": 21
                 }
               ],
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_should_see_items_added_to_the_shopping_cart(int)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 222920800,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I click on the CHECKOUT button",
-            "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_click_on_the_checkout_button()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 36999500,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I type \"FirstName\" for First Name",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"FirstName\"",
-                  "offset": 7
-                }
-              ],
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_type_for_first_name(java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27014100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I type \"LastName\" for Last Name",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"LastName\"",
-                  "offset": 7
-                }
-              ],
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_type_for_last_name(java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24469500,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I type \"EC1A 9JU\" for ZIP/Postal Code",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"EC1A 9JU\"",
-                  "offset": 7
-                }
-              ],
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_type_for_zip_postal_code(java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 219083800,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I click on the CONTINUE button",
-            "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.i_click_on_the_continue_button()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 33480100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Item total will be equal to the total of items on the list",
-            "match": {
-              "location": "qumu.stepDefinitions.UIStepDefinition.item_total_will_be_equal_to_the_total_of_items_on_the_list()"
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_receive_error_code_in_response(int)"
             },
             "after": [
               {
@@ -457,60 +428,104 @@
               }
             ],
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 20507800,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "a Tax rate of 8 % is applied to the total",
-            "match": {
-              "arguments": [
-                {
-                  "val": "8",
-                  "offset": 14
-                }
-              ],
-              "location": "qumu.stepDefinitions.UIStepDefinition.a_tax_rate_is_applied_to_the_total(double)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "qumu.hook.UIHook.takeScreenshotAfterStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@UI"
+            "name": "@API"
           }
         ]
-      }
-    ],
-    "name": "Checkout items in the basket",
-    "description": "",
-    "id": "checkout-items-in-the-basket",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/qumu/features/UI-Test.feature",
-    "tags": [
+      },
       {
-        "name": "@UI",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  }
-]"location": "qumu.stepDefinitions.APIStepDefinition.i_create_a_user_with_following(java.lang.String,java.lang.String)"
+        "start_timestamp": "2025-02-26T04:43:35.183Z",
+        "before": [
+          {
+            "output": [
+              "API test run begins"
+            ],
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.APIHook.beforeTest(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.UIHook.initializeTest(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.stepDefinitions.APIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.stepDefinitions.UIStepDefinition.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "CREATE a user",
+        "description": "",
+        "id": "api-test;create-a-user;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.UIHook.screenshot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "API test run completed"
+            ],
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "qumu.hook.APIHook.afterTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Created user with name: Peter and job: Manager"
+            ],
+            "result": {
+              "duration": 473000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I create a user with following \"Peter\" \"Manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Peter\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Manager\"",
+                  "offset": 39
+                }
+              ],
+              "location": "qumu.stepDefinitions.APIStepDefinition.i_create_a_user_with_following(java.lang.String,java.lang.String)"
             },
             "after": [
               {
@@ -527,11 +542,11 @@
           {
             "output": [
               "Created user: Name\u003dPeter, Job\u003dManager",
-              "User ID: 907",
-              "Created At: 2025-02-26T03:12:21.320Z"
+              "User ID: 78",
+              "Created At: 2025-02-26T04:43:36.537Z"
             ],
             "result": {
-              "duration": 50584700,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 21,
@@ -573,7 +588,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T03:12:20.267Z",
+        "start_timestamp": "2025-02-26T04:43:35.755Z",
         "before": [
           {
             "output": [
@@ -629,6 +644,7 @@
               "API test run completed"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -644,7 +660,7 @@
               "Created user with name: Liza and job: Sales"
             ],
             "result": {
-              "duration": 364630300,
+              "duration": 440000000,
               "status": "passed"
             },
             "line": 20,
@@ -677,11 +693,11 @@
           {
             "output": [
               "Created user: Name\u003dLiza, Job\u003dSales",
-              "User ID: 177",
-              "Created At: 2025-02-26T03:12:21.755Z"
+              "User ID: 708",
+              "Created At: 2025-02-26T04:43:37.049Z"
             ],
             "result": {
-              "duration": 59141800,
+              "duration": 50000000,
               "status": "passed"
             },
             "line": 21,
@@ -723,7 +739,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T03:12:20.702Z",
+        "start_timestamp": "2025-02-26T04:43:36.253Z",
         "before": [
           {
             "output": [
@@ -791,7 +807,7 @@
         "steps": [
           {
             "result": {
-              "duration": 360911300,
+              "duration": 405000000,
               "status": "passed"
             },
             "line": 30,
@@ -830,7 +846,6 @@
               "Response Code 200"
             ],
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 33,
@@ -864,7 +879,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T03:12:21.073Z",
+        "start_timestamp": "2025-02-26T04:43:36.665Z",
         "before": [
           {
             "output": [
@@ -920,6 +935,7 @@
               "API test run completed"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -932,7 +948,7 @@
         "steps": [
           {
             "result": {
-              "duration": 352829000,
+              "duration": 468000000,
               "status": "passed"
             },
             "line": 36,
@@ -971,6 +987,7 @@
               "Response Code 400"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 39,
@@ -987,6 +1004,7 @@
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -1001,7 +1019,7 @@
               "Error Message: Missing password"
             ],
             "result": {
-              "duration": 16136500,
+              "duration": 11000000,
               "status": "passed"
             },
             "line": 40,
@@ -1041,13 +1059,14 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T03:12:21.453Z",
+        "start_timestamp": "2025-02-26T04:43:37.154Z",
         "before": [
           {
             "output": [
               "API test run begins"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1109,7 +1128,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3332832000,
+              "duration": 3331000000,
               "status": "passed"
             },
             "line": 45,
@@ -1135,7 +1154,7 @@
               "Unique Set of User IDs: [1, 2, 3, 4, 5, 6]"
             ],
             "result": {
-              "duration": 17921700,
+              "duration": 11000000,
               "status": "passed"
             },
             "line": 46,
@@ -1146,6 +1165,7 @@
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {

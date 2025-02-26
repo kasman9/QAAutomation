@@ -16,7 +16,7 @@ import java.text.MessageFormat;
 public class BrowserSetup  {
 
     public static String browser = null;
-    private static final String CHROME_WIN = Paths.get("src", "test", "java", "browserDirectory", "chromedriver.exe").toAbsolutePath().toString();
+    private static final String CHROME_WIN = Paths.get("src", "test", "java", "qumu","browserDirectory", "chromedriver.exe").toAbsolutePath().toString();
 
     /**
      * Browser property location /src/test/java/TestData/TestData.properties
@@ -32,7 +32,7 @@ public class BrowserSetup  {
 
         if (browser.equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", CHROME_WIN);
-            WebDriverManager.chromedriver().setup();
+            //WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("edge")) {
             //System.setProperty("webdriver.edge.driver", EDGE);

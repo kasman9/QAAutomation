@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="QA Automation" parallel="tests" thread-count="2">
+<suite name="QA Automation" parallel="tests" thread-count="5">
     <test name="APITests">
         <classes>
             <class name="qumu.runners.APIRunner"/>
         </classes>
     </test>
-    <test name="UITests">
+    <test name="UITests2">
+        <classes>
+            <class name="qumu.runners.UIRunner"/>
+        </classes>
+    </test>
+    <test name="UITests3">
+        <classes>
+            <class name="qumu.runners.UIRunner"/>
+        </classes>
+    </test>
+    <test name="UITests4">
+        <classes>
+            <class name="qumu.runners.UIRunner"/>
+        </classes>
+    </test>
+    <test name="UITests5">
         <classes>
             <class name="qumu.runners.UIRunner"/>
         </classes>
