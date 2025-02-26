@@ -3,14 +3,14 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-02-26T04:43:32.517Z",
+        "start_timestamp": "2025-02-26T06:15:16.142Z",
         "before": [
           {
             "output": [
               "API test run begins"
             ],
             "result": {
-              "duration": 5000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -27,6 +27,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 5000000,
+              "duration": 12000000,
               "status": "passed"
             },
             "match": {
@@ -50,6 +51,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -61,6 +63,7 @@
               "API test run completed"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -77,7 +80,7 @@
               "Total Pages \u003d 2"
             ],
             "result": {
-              "duration": 1959000000,
+              "duration": 1765000000,
               "status": "passed"
             },
             "line": 5,
@@ -103,7 +106,7 @@
               "List of Users on page 2 \u003d 6"
             ],
             "result": {
-              "duration": 170000000,
+              "duration": 130000000,
               "status": "passed"
             },
             "line": 6,
@@ -114,7 +117,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -130,7 +132,7 @@
               "Total User ID\u0027s \u003d 12"
             ],
             "result": {
-              "duration": 4000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 7,
@@ -158,13 +160,14 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T04:43:34.698Z",
+        "start_timestamp": "2025-02-26T06:15:18.083Z",
         "before": [
           {
             "output": [
               "API test run begins"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -173,7 +176,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -204,7 +206,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -216,7 +217,6 @@
               "API test run completed"
             ],
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -229,7 +229,7 @@
         "steps": [
           {
             "result": {
-              "duration": 87000000,
+              "duration": 51000000,
               "status": "passed"
             },
             "line": 10,
@@ -246,7 +246,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 3000000,
                   "status": "passed"
                 },
                 "match": {
@@ -262,7 +261,7 @@
               "User data Email from response: emma.wong@reqres.in"
             ],
             "result": {
-              "duration": 19000000,
+              "duration": 10000000,
               "status": "passed"
             },
             "line": 11,
@@ -273,6 +272,7 @@
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -304,14 +304,13 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T04:43:34.828Z",
+        "start_timestamp": "2025-02-26T06:15:18.150Z",
         "before": [
           {
             "output": [
               "API test run begins"
             ],
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -373,7 +372,7 @@
         "steps": [
           {
             "result": {
-              "duration": 345000000,
+              "duration": 339000000,
               "status": "passed"
             },
             "line": 16,
@@ -404,6 +403,7 @@
               "Error code \u003d 404"
             ],
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 17,
@@ -437,7 +437,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T04:43:35.183Z",
+        "start_timestamp": "2025-02-26T06:15:18.497Z",
         "before": [
           {
             "output": [
@@ -509,7 +509,7 @@
               "Created user with name: Peter and job: Manager"
             ],
             "result": {
-              "duration": 473000000,
+              "duration": 361000000,
               "status": "passed"
             },
             "line": 20,
@@ -542,11 +542,11 @@
           {
             "output": [
               "Created user: Name\u003dPeter, Job\u003dManager",
-              "User ID: 78",
-              "Created At: 2025-02-26T04:43:36.537Z"
+              "User ID: 762",
+              "Created At: 2025-02-26T06:15:19.874Z"
             ],
             "result": {
-              "duration": 88000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 21,
@@ -588,7 +588,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T04:43:35.755Z",
+        "start_timestamp": "2025-02-26T06:15:18.907Z",
         "before": [
           {
             "output": [
@@ -644,7 +644,6 @@
               "API test run completed"
             ],
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -660,7 +659,7 @@
               "Created user with name: Liza and job: Sales"
             ],
             "result": {
-              "duration": 440000000,
+              "duration": 340000000,
               "status": "passed"
             },
             "line": 20,
@@ -693,11 +692,11 @@
           {
             "output": [
               "Created user: Name\u003dLiza, Job\u003dSales",
-              "User ID: 708",
-              "Created At: 2025-02-26T04:43:37.049Z"
+              "User ID: 694",
+              "Created At: 2025-02-26T06:15:20.252Z"
             ],
             "result": {
-              "duration": 50000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 21,
@@ -739,7 +738,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T04:43:36.253Z",
+        "start_timestamp": "2025-02-26T06:15:19.295Z",
         "before": [
           {
             "output": [
@@ -807,7 +806,7 @@
         "steps": [
           {
             "result": {
-              "duration": 405000000,
+              "duration": 343000000,
               "status": "passed"
             },
             "line": 30,
@@ -879,7 +878,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T04:43:36.665Z",
+        "start_timestamp": "2025-02-26T06:15:19.645Z",
         "before": [
           {
             "output": [
@@ -935,7 +934,6 @@
               "API test run completed"
             ],
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -948,7 +946,7 @@
         "steps": [
           {
             "result": {
-              "duration": 468000000,
+              "duration": 310000000,
               "status": "passed"
             },
             "line": 36,
@@ -1004,7 +1002,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -1019,7 +1016,7 @@
               "Error Message: Missing password"
             ],
             "result": {
-              "duration": 11000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 40,
@@ -1059,7 +1056,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T04:43:37.154Z",
+        "start_timestamp": "2025-02-26T06:15:19.964Z",
         "before": [
           {
             "output": [
@@ -1128,7 +1125,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3331000000,
+              "duration": 3318000000,
               "status": "passed"
             },
             "line": 45,
@@ -1139,6 +1136,7 @@
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -1154,7 +1152,7 @@
               "Unique Set of User IDs: [1, 2, 3, 4, 5, 6]"
             ],
             "result": {
-              "duration": 11000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 46,
@@ -1165,7 +1163,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
