@@ -11,19 +11,5 @@
             <class name="qumu.runners.UIRunner"/>
         </classes>
     </test>
-    <test name="UITests3">
-        <classes>
-            <class name="qumu.runners.UIRunner"/>
-        </classes>
-    </test>
-    <test name="UITests4">
-        <classes>
-            <class name="qumu.runners.UIRunner"/>
-        </classes>
-    </test>
-    <test name="UITests5">
-        <classes>
-            <class name="qumu.runners.UIRunner"/>
-        </classes>
-    </test>
+
 </suite>

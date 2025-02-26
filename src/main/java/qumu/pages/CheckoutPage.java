@@ -7,25 +7,32 @@ import java.util.List;
 public class CheckoutPage extends BasePage{
 
 
+    private   static final String ADD_TO_CART_BUTTON = "//button[@data-test='add-to-cart-%s']";
 
+    private  static final String REMOVE_BUTTON = "//div[text()='%s']/following::button[text()='Remove']";
+    private   static final String ITEM_TOTAL_TEXT = "Item total: $";
+    private  static final String TAX_TEXT = "Tax: $";
 
-    private By cartBadge = By.className("shopping_cart_badge");
-    private By cartLink = By.className("shopping_cart_link");
-    private By checkoutButton = By.id("checkout");
-    private By continueButton = By.id("continue");
-    private By firstNameField = By.id("first-name");
-    private By lastNameField = By.id("last-name");
-    private By zipCodeField = By.id("postal-code");
-    private By subtotalLabel = By.className("summary_subtotal_label");
-    private By taxLabel = By.className("summary_tax_label");
-    private By inventoryPrices = By.className("inventory_item_price");
+    private  static final String CURRENCY_SYMBOL = "$";
+
+    private static final By cartBadge = By.className("shopping_cart_badge");
+    private static final By cartLink = By.className("shopping_cart_link");
+    private static final By checkoutButton = By.id("checkout");
+    private static final By continueButton = By.id("continue");
+    private static final By firstNameField = By.id("first-name");
+    private static final By lastNameField = By.id("last-name");
+    private static final By zipCodeField = By.id("postal-code");
+    private static final By subtotalLabel = By.className("summary_subtotal_label");
+    private static final By taxLabel = By.className("summary_tax_label");
+    private static final By inventoryPrices = By.className("inventory_item_price");
+    private static final String CART_QUANTITY_CLASS = "cart_quantity";
 
     /**
      * Add items to the shopping cart.
      */
     public void addItemsToBasket(List<String> items) {
         for (String item : items) {
-            driver.findElement(By.xpath("//button[@data-test='add-to-cart-" + item.toLowerCase().replace(" ", "-") + "']")).click();
+            driver.findElement(By.xpath(String.format(ADD_TO_CART_BUTTON, item.toLowerCase().replace(" ", "-")))).click();
         }
     }
 
@@ -47,7 +54,7 @@ public class CheckoutPage extends BasePage{
      * Verify that each item in the cart has the expected quantity.
      */
     public boolean verifyQuantity(int expectedQty) {
-        List<WebElement> qtyElements = driver.findElements(By.className("cart_quantity"));
+        List<WebElement> qtyElements = driver.findElements(By.className(CART_QUANTITY_CLASS));
         for (WebElement qty : qtyElements) {
             if (Integer.parseInt(qty.getText()) != expectedQty) {
                 return false;
@@ -61,7 +68,8 @@ public class CheckoutPage extends BasePage{
      */
     public void removeItemsFromCart(List<String> items) {
         for (String item : items) {
-            driver.findElement(By.xpath("//div[text()='" + item + "']/following::button[text()='Remove']")).click();
+         driver.findElement(By.xpath(String.format(REMOVE_BUTTON, item))).click();
+
         }
     }
 
@@ -104,14 +112,14 @@ public class CheckoutPage extends BasePage{
      * Get the subtotal from the summary page.
      */
     public double getSubtotal() {
-        return Double.parseDouble(driver.findElement(subtotalLabel).getText().replace("Item total: $", ""));
+        return Double.parseDouble(driver.findElement(subtotalLabel).getText().replace(ITEM_TOTAL_TEXT, ""));
     }
 
     /**
      * Get the tax amount from the summary page.
      */
     public double getTax() {
-        return Double.parseDouble(driver.findElement(taxLabel).getText().replace("Tax: $", ""));
+        return Double.parseDouble(driver.findElement(taxLabel).getText().replace(TAX_TEXT, ""));
     }
 
     /**
@@ -121,7 +129,7 @@ public class CheckoutPage extends BasePage{
         List<WebElement> prices = driver.findElements(inventoryPrices);
         double total = 0;
         for (WebElement price : prices) {
-            total += Double.parseDouble(price.getText().replace("$", ""));
+            total += Double.parseDouble(price.getText().replace(CURRENCY_SYMBOL, ""));
         }
         return getSubtotal() == total;
     }

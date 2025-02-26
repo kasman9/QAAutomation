@@ -1,6 +1,7 @@
 package utils;
 
 import drivers.DriverManager;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,7 +34,7 @@ public class BrowserSetup  {
         if (browser.equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", CHROME_WIN);
             //WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("edge")) {
             //System.setProperty("webdriver.edge.driver", EDGE);
             WebDriverManager.edgedriver().setup();
