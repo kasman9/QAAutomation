@@ -28,7 +28,7 @@ public class BrowserSetup  {
      */
     public WebDriver selectBrowser() {
         WebDriver driver = null;
-        browser = LoadProp.getproperty("Browser");
+        browser = LoadProp.getProperty("Browser");
 
         if (browser.equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", CHROME_WIN);

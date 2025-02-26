@@ -1,1 +1,6 @@
-qumu\RunnerTest.class
+qumu\hook\APIHook.class
+qumu\hook\UIHook.class
+qumu\stepDefinitions\APIStepDefinition.class
+qumu\runners\UIRunner.class
+qumu\stepDefinitions\UIStepDefinition.class
+qumu\runners\APIRunner.class

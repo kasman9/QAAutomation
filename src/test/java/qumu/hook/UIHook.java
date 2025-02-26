@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import utils.BrowserSetup;
 import utils.LoadProp;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.sql.Timestamp;
@@ -32,7 +33,7 @@ public class UIHook {
 
     public void clearOldScreenshots() {
         try {
-            File folder = new File(LoadProp.getproperty("ScreenshotLocation"));
+            File folder = new File(LoadProp.getProperty("ScreenshotLocation"));
             if (folder.exists()) {
                 FileUtils.cleanDirectory(folder);
 
@@ -76,10 +77,10 @@ public class UIHook {
                 String screenShotFilename = scenario.getName().replace(" ", "")
                         + "_Step_"
                         + new Timestamp(new Date().getTime()).toString().replaceAll("[^a-zA-Z0-9]", "")
-                        + "_" + LoadProp.getproperty("Browser") + ".jpg";
+                        + "_" + LoadProp.getProperty("Browser") + ".jpg";
 
                 try {
-                    FileUtils.copyFile(scrFile, new File(LoadProp.getproperty("ScreenshotLocation") + screenShotFilename));
+                    FileUtils.copyFile(scrFile, new File(LoadProp.getProperty("ScreenshotLocation") + screenShotFilename));
                     System.out.println("📸 Screenshot Taken: " + screenShotFilename);
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -92,11 +93,11 @@ public class UIHook {
         if (tags.contains("@UI")) {
             String screenShotFilename = scenario.getName().replace(" ", "")
                     + new Timestamp(new Date().getTime()).toString().replaceAll("[^a-zA-Z0-9]", "")
-                    + "_" + LoadProp.getproperty("Browser") + ".jpg";
+                    + "_" + LoadProp.getProperty("Browser") + ".jpg";
 
             File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
-                FileUtils.copyFile(scrFile, new File(LoadProp.getproperty("ScreenshotLocation") + screenShotFilename));
+                FileUtils.copyFile(scrFile, new File(LoadProp.getProperty("ScreenshotLocation") + screenShotFilename));
             } catch (IOException e) {
                 e.printStackTrace();
             }

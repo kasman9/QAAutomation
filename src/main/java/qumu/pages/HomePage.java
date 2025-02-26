@@ -6,6 +6,6 @@ public class HomePage extends BasePage {
 
 
     public void openHomePage() {
-    driver.get(LoadProp.getproperty("url"));
+    driver.get(LoadProp.getProperty("url"));
     }
 }

@@ -5,25 +5,21 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class LoadProp  {
+public class LoadProp {
 
-    static Properties prop;
-    static FileInputStream input;
-    public static String testData = "/src/test/java/qumu/TestData/TestData.properties";
+    private static final Properties prop = new Properties();
+    private static final String testDataPath = "/src/test/java/qumu/TestData/TestData.properties";
+    private static final File currentDirectory = new File(new File("").getAbsolutePath());
 
-    private static File currentDirectory = new File(new File("").getAbsolutePath());
-
-
-    public static String getproperty(String key) {
-        prop = new Properties();
-
-        try {
-            input = new FileInputStream(currentDirectory + testData);
+    static {
+        try (FileInputStream input = new FileInputStream(currentDirectory + testDataPath)) {
             prop.load(input);
-            input.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String getProperty(String key) {
         return prop.getProperty(key);
     }
 }

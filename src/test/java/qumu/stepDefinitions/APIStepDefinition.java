@@ -20,7 +20,7 @@ public class APIStepDefinition {
     private int totalPages;
     private Scenario scenario;
 
-    private final String BASE_URL = LoadProp.getproperty("apiURL");
+    private final String BASE_URL = LoadProp.getProperty("apiURL");
 
     @Before
     public void setUp(Scenario scenario) {

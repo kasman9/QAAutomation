@@ -3,10 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-02-26T01:49:13.071Z",
+        "start_timestamp": "2025-02-26T03:12:17.279Z",
         "before": [
           {
             "result": {
+              "duration": 999400,
               "status": "passed"
             },
             "match": {
@@ -15,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 4792000000,
+              "duration": 4811947100,
               "status": "passed"
             },
             "match": {
@@ -24,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 1000100,
               "status": "passed"
             },
             "match": {
@@ -47,7 +48,7 @@
         "after": [
           {
             "result": {
-              "duration": 998000000,
+              "duration": 994892000,
               "status": "passed"
             },
             "match": {
@@ -68,7 +69,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1059000000,
+              "duration": 925364400,
               "status": "passed"
             },
             "line": 5,
@@ -79,7 +80,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 63000000,
+                  "duration": 111926400,
                   "status": "passed"
                 },
                 "match": {
@@ -94,7 +95,7 @@
               "User Name: standard_user"
             ],
             "result": {
-              "duration": 441000000,
+              "duration": 405712200,
               "status": "passed"
             },
             "line": 6,
@@ -130,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 942000000,
+              "duration": 895564200,
               "status": "passed"
             },
             "line": 9,
@@ -174,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 17000000,
+              "duration": 13999300,
               "status": "passed"
             },
             "line": 14,
@@ -202,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 239000000,
+              "duration": 224818900,
               "status": "passed"
             },
             "line": 15,
@@ -224,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 35007500,
               "status": "passed"
             },
             "line": 16,
@@ -252,7 +253,7 @@
           },
           {
             "result": {
-              "duration": 238000000,
+              "duration": 215888500,
               "status": "passed"
             },
             "line": 17,
@@ -281,7 +282,7 @@
           },
           {
             "result": {
-              "duration": 18000000,
+              "duration": 13001000,
               "status": "passed"
             },
             "line": 19,
@@ -309,7 +310,7 @@
           },
           {
             "result": {
-              "duration": 250000000,
+              "duration": 222920800,
               "status": "passed"
             },
             "line": 20,
@@ -331,7 +332,7 @@
           },
           {
             "result": {
-              "duration": 51000000,
+              "duration": 36999500,
               "status": "passed"
             },
             "line": 21,
@@ -359,7 +360,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 27014100,
               "status": "passed"
             },
             "line": 22,
@@ -387,7 +388,7 @@
           },
           {
             "result": {
-              "duration": 45000000,
+              "duration": 24469500,
               "status": "passed"
             },
             "line": 23,
@@ -415,7 +416,7 @@
           },
           {
             "result": {
-              "duration": 247000000,
+              "duration": 219083800,
               "status": "passed"
             },
             "line": 24,
@@ -426,7 +427,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -438,7 +438,7 @@
           },
           {
             "result": {
-              "duration": 54000000,
+              "duration": 33480100,
               "status": "passed"
             },
             "line": 25,
@@ -460,7 +460,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 20507800,
               "status": "passed"
             },
             "line": 26,
@@ -510,7 +510,9 @@
       }
     ]
   }
-]        "after": [
+]"location": "qumu.stepDefinitions.APIStepDefinition.i_create_a_user_with_following(java.lang.String,java.lang.String)"
+            },
+            "after": [
               {
                 "result": {
                   "status": "passed"
@@ -525,11 +527,11 @@
           {
             "output": [
               "Created user: Name\u003dPeter, Job\u003dManager",
-              "User ID: 410",
-              "Created At: 2025-02-26T01:49:16.662Z"
+              "User ID: 907",
+              "Created At: 2025-02-26T03:12:21.320Z"
             ],
             "result": {
-              "duration": 31000000,
+              "duration": 50584700,
               "status": "passed"
             },
             "line": 21,
@@ -571,7 +573,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T01:49:15.917Z",
+        "start_timestamp": "2025-02-26T03:12:20.267Z",
         "before": [
           {
             "output": [
@@ -594,7 +596,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -617,7 +618,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -644,7 +644,7 @@
               "Created user with name: Liza and job: Sales"
             ],
             "result": {
-              "duration": 368000000,
+              "duration": 364630300,
               "status": "passed"
             },
             "line": 20,
@@ -677,11 +677,11 @@
           {
             "output": [
               "Created user: Name\u003dLiza, Job\u003dSales",
-              "User ID: 753",
-              "Created At: 2025-02-26T01:49:17.303Z"
+              "User ID: 177",
+              "Created At: 2025-02-26T03:12:21.755Z"
             ],
             "result": {
-              "duration": 35000000,
+              "duration": 59141800,
               "status": "passed"
             },
             "line": 21,
@@ -723,7 +723,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T01:49:16.329Z",
+        "start_timestamp": "2025-02-26T03:12:20.702Z",
         "before": [
           {
             "output": [
@@ -746,7 +746,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -792,7 +791,7 @@
         "steps": [
           {
             "result": {
-              "duration": 342000000,
+              "duration": 360911300,
               "status": "passed"
             },
             "line": 30,
@@ -831,6 +830,7 @@
               "Response Code 200"
             ],
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 33,
@@ -864,7 +864,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T01:49:16.679Z",
+        "start_timestamp": "2025-02-26T03:12:21.073Z",
         "before": [
           {
             "output": [
@@ -932,7 +932,7 @@
         "steps": [
           {
             "result": {
-              "duration": 348000000,
+              "duration": 352829000,
               "status": "passed"
             },
             "line": 36,
@@ -1001,7 +1001,7 @@
               "Error Message: Missing password"
             ],
             "result": {
-              "duration": 9000000,
+              "duration": 16136500,
               "status": "passed"
             },
             "line": 40,
@@ -1012,7 +1012,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -1042,7 +1041,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-26T01:49:17.042Z",
+        "start_timestamp": "2025-02-26T03:12:21.453Z",
         "before": [
           {
             "output": [
@@ -1098,7 +1097,6 @@
               "API test run completed"
             ],
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1111,7 +1109,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3608000000,
+              "duration": 3332832000,
               "status": "passed"
             },
             "line": 45,
@@ -1137,7 +1135,7 @@
               "Unique Set of User IDs: [1, 2, 3, 4, 5, 6]"
             ],
             "result": {
-              "duration": 18000000,
+              "duration": 17921700,
               "status": "passed"
             },
             "line": 46,
