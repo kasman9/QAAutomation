@@ -6,9 +6,8 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import qumu.IniClass;
+import utils.IniClass;
 
 import java.util.List;
 

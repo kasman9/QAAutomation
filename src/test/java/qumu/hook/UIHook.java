@@ -9,8 +9,8 @@ import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import qumu.BrowserSetup;
-import qumu.LoadProp;
+import utils.BrowserSetup;
+import utils.LoadProp;
 
 import java.io.File;
 import java.io.IOException;

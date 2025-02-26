@@ -6,7 +6,7 @@ import org.testng.*;
 import io.restassured.response.*;
 import io.cucumber.java.Scenario;
 import io.cucumber.datatable.DataTable;
-import qumu.LoadProp;
+import utils.LoadProp;
 
 import java.util.HashSet;
 import java.util.List;

@@ -1,8 +1,6 @@
-package qumu;
+package qumu.pages;
 
-import org.kohsuke.rngom.parse.host.Base;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
 

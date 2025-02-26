@@ -1,7 +1,7 @@
-package qumu;
+package qumu.pages;
 
-import org.kohsuke.rngom.parse.host.Base;
 import org.openqa.selenium.WebDriver;
+import drivers.DriverManager;
 
 public class BasePage {
     protected  WebDriver driver;

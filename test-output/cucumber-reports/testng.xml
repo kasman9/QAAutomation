@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><testng-results failed="0" passed="8" skipped="0" total="8">
-<suite duration-ms="6450" name="io.cucumber.core.plugin.TestNGFormatter">
-<test duration-ms="6450" name="io.cucumber.core.plugin.TestNGFormatter">
-<class name="API test">
-<test-method duration-ms="1378" finished-at="2025-02-25T15:24:36.392Z" name="Should see LIST USERS of all existing users" started-at="2025-02-25T15:24:35.004Z" status="PASS"/>
-<test-method duration-ms="70" finished-at="2025-02-25T15:24:36.480Z" name="Should see SINGLE USER data" started-at="2025-02-25T15:24:36.409Z" status="PASS"/>
-<test-method duration-ms="42" finished-at="2025-02-25T15:24:36.526Z" name="Should see SINGLE USER NOT FOUND error code" started-at="2025-02-25T15:24:36.483Z" status="PASS"/>
-<test-method duration-ms="370" finished-at="2025-02-25T15:24:36.905Z" name="CREATE a user" started-at="2025-02-25T15:24:36.532Z" status="PASS"/>
-<test-method duration-ms="354" finished-at="2025-02-25T15:24:37.264Z" name="CREATE a user_2" started-at="2025-02-25T15:24:36.909Z" status="PASS"/>
-<test-method duration-ms="325" finished-at="2025-02-25T15:24:37.596Z" name="LOGIN - SUCCESSFUL by a user" started-at="2025-02-25T15:24:37.269Z" status="PASS"/>
-<test-method duration-ms="381" finished-at="2025-02-25T15:24:37.985Z" name="LOGIN - UNSUCCESSFUL by a user" started-at="2025-02-25T15:24:37.603Z" status="PASS"/>
-<test-method duration-ms="3348" finished-at="2025-02-25T15:24:41.339Z" name="Should see the list of users with DELAYED RESPONSE" started-at="2025-02-25T15:24:37.988Z" status="PASS"/>
+<?xml version="1.0" encoding="UTF-8"?><testng-results failed="0" passed="1" skipped="0" total="1">
+<suite duration-ms="9823" name="io.cucumber.core.plugin.TestNGFormatter">
+<test duration-ms="9823" name="io.cucumber.core.plugin.TestNGFormatter">
+<class name="Checkout items in the basket">
+<test-method duration-ms="9578" finished-at="2025-02-26T01:49:22.661Z" name="Check item total cost and tax" started-at="2025-02-26T01:49:13.071Z" status="PASS"/>
+</class>
+</test>
+</suite>
+</testng-results>
+01:49:14.930Z" name="Should see SINGLE USER data" started-at="2025-02-26T01:49:14.854Z" status="PASS"/>
+<test-method duration-ms="329" finished-at="2025-02-26T01:49:15.265Z" name="Should see SINGLE USER NOT FOUND error code" started-at="2025-02-26T01:49:14.935Z" status="PASS"/>
+<test-method duration-ms="641" finished-at="2025-02-26T01:49:15.912Z" name="CREATE a user" started-at="2025-02-26T01:49:15.269Z" status="PASS"/>
+<test-method duration-ms="405" finished-at="2025-02-26T01:49:16.324Z" name="CREATE a user_2" started-at="2025-02-26T01:49:15.917Z" status="PASS"/>
+<test-method duration-ms="343" finished-at="2025-02-26T01:49:16.674Z" name="LOGIN - SUCCESSFUL by a user" started-at="2025-02-26T01:49:16.329Z" status="PASS"/>
+<test-method duration-ms="358" finished-at="2025-02-26T01:49:17.039Z" name="LOGIN - UNSUCCESSFUL by a user" started-at="2025-02-26T01:49:16.679Z" status="PASS"/>
+<test-method duration-ms="3627" finished-at="2025-02-26T01:49:20.672Z" name="Should see the list of users with DELAYED RESPONSE" started-at="2025-02-26T01:49:17.042Z" status="PASS"/>
 </class>
 </test>
 </suite>

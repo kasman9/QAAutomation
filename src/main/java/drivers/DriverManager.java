@@ -1,4 +1,4 @@
-package qumu;
+package drivers;
 
 import org.openqa.selenium.WebDriver;
 

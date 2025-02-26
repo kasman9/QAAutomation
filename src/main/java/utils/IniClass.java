@@ -1,4 +1,8 @@
-package qumu;
+package utils;
+
+import qumu.pages.CheckoutPage;
+import qumu.pages.HomePage;
+import qumu.pages.LoginPage;
 
 public class IniClass {
     private HomePage homePage;

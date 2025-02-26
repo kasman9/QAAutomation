@@ -1,6 +1,6 @@
-package qumu;
+package qumu.pages;
 
-import org.openqa.selenium.WebDriver;
+import utils.LoadProp;
 
 public class HomePage extends BasePage {
 
