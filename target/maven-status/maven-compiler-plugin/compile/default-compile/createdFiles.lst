@@ -1,8 +1,0 @@
-qumu\pages\BasePage.class
-qumu\pages\HomePage.class
-drivers\DriverManager.class
-utils\LoadProp.class
-qumu\pages\CheckoutPage.class
-utils\IniClass.class
-utils\BrowserSetup.class
-qumu\pages\LoginPage.class
